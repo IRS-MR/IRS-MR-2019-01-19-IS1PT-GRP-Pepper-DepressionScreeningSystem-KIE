@@ -1,2 +1,14 @@
-package com.phq9_final.phq9final;
+package com.phq9_test.phq9test;
 
+import java.lang.Number;
+
+rule "PreScreenRule"
+	dialect "mvel"
+	ruleflow-group "PreScreenRule"
+	when
+		PatientP : PatientParticular( this.name != null )
+	then
+		PreScreenR fact0 = new PreScreenR();
+		fact0.setPreScreenResult( true );
+		insert( fact0 );
+end
