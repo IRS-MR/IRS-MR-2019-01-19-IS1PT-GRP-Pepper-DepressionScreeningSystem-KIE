@@ -11,7 +11,7 @@ rule "TreatmentRule_1"
 	then
 		Treatment1 fact2 = new Treatment1();
 		fact2.setTreat1( true );
-		insertLogical( fact2 );
+		insert( fact2 );
 end
 
 rule "TreatmentRule_2"
@@ -23,7 +23,7 @@ rule "TreatmentRule_2"
 	then
 		Treatment2 fact2 = new Treatment2();
 		fact2.setTreat2( true );
-		insertLogical( fact2 );
+		insert( fact2 );
 end
 
 rule "TreatmentRule_3"
@@ -35,7 +35,7 @@ rule "TreatmentRule_3"
 	then
 		Treatment3 fact2 = new Treatment3();
 		fact2.setTreat3( true );
-		insertLogical( fact2 );
+		insert( fact2 );
 end
 
 rule "TreatmentRule_4"
@@ -47,5 +47,5 @@ rule "TreatmentRule_4"
 	then
 		Treatment4 fact2 = new Treatment4();
 		fact2.setTreat4( true );
-		insertLogical( fact2 );
+		insert( fact2 );
 end
