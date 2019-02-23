@@ -1,2 +1,1240 @@
 package com.phq9_final.phq9final;
 
+rule "PHQ-9-Rule_1"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ5>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_2"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ6>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_3"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ7>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_4"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ8>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_5"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_6"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ5>=2,PHQQ6>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_7"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ5>=2,PHQQ7>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_8"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ5>=2,PHQQ8>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_9"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ5>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_10"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ6>=2,PHQQ7>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_11"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ6>=2,PHQQ8>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_12"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ6>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_13"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ7>=2,PHQQ8>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_14"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ7>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_15"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ8>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_16"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
+		PHQQa: PHQ9Q(PHQQ4>=2,PHQQ5>=2,PHQQ6>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_17"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
+		PHQQa: PHQ9Q(PHQQ4>=2,PHQQ5>=2,PHQQ7>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_18"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
+		PHQQa: PHQ9Q(PHQQ4>=2,PHQQ5>=2,PHQQ8>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_19"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
+		PHQQa: PHQ9Q(PHQQ4>=2,PHQQ5>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_20"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
+		PHQQa: PHQ9Q(PHQQ4>=2,PHQQ6>=2,PHQQ7>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_21"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
+		PHQQa: PHQ9Q(PHQQ4>=2,PHQQ6>=2,PHQQ8>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_22"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
+		PHQQa: PHQ9Q(PHQQ4>=2,PHQQ6>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_23"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
+		PHQQa: PHQ9Q(PHQQ4>=2,PHQQ7>=2,PHQQ8>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_24"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
+		PHQQa: PHQ9Q(PHQQ4>=2,PHQQ7>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_25"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
+		PHQQa: PHQ9Q(PHQQ4>=2,PHQQ8>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_26"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
+		PHQQa: PHQ9Q(PHQQ5>=2,PHQQ6>=2,PHQQ7>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_27"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
+		PHQQa: PHQ9Q(PHQQ5>=2,PHQQ6>=2,PHQQ8>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_28"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
+		PHQQa: PHQ9Q(PHQQ5>=2,PHQQ6>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_29"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
+		PHQQa: PHQ9Q(PHQQ5>=2,PHQQ7>=2,PHQQ8>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_30"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
+		PHQQa: PHQ9Q(PHQQ5>=2,PHQQ7>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_31"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
+		PHQQa: PHQ9Q(PHQQ5>=2,PHQQ8>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_32"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
+		PHQQa: PHQ9Q(PHQQ6>=2,PHQQ7>=2,PHQQ8>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_33"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
+		PHQQa: PHQ9Q(PHQQ6>=2,PHQQ7>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_34"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
+		PHQQa: PHQ9Q(PHQQ6>=2,PHQQ8>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_35"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
+		PHQQa: PHQ9Q(PHQQ7>=2,PHQQ8>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_36"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ5>=2,PHQQ6>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_37"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ5>=2,PHQQ7>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_38"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ5>=2,PHQQ8>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_39"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ5>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_40"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ6>=2,PHQQ7>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_41"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ6>=2,PHQQ8>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_42"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ6>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_43"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ7>=2,PHQQ8>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_44"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ7>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_45"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ8>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_46"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ5>=2,PHQQ6>=2,PHQQ7>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_47"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ5>=2,PHQQ6>=2,PHQQ8>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_48"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ5>=2,PHQQ6>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_49"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ5>=2,PHQQ7>=2,PHQQ8>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_50"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ5>=2,PHQQ7>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_51"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ5>=2,PHQQ8>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_52"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ6>=2,PHQQ7>=2,PHQQ8>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_53"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ6>=2,PHQQ7>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_54"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ6>=2,PHQQ8>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_55"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ7>=2,PHQQ8>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_56"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ4>=2,PHQQ5>=2,PHQQ6>=2,PHQQ7>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_57"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ4>=2,PHQQ5>=2,PHQQ6>=2,PHQQ8>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_58"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ4>=2,PHQQ5>=2,PHQQ6>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_59"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ4>=2,PHQQ5>=2,PHQQ7>=2,PHQQ8>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_60"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ4>=2,PHQQ5>=2,PHQQ7>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_61"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ4>=2,PHQQ5>=2,PHQQ8>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_62"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ4>=2,PHQQ6>=2,PHQQ7>=2,PHQQ8>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_63"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ4>=2,PHQQ6>=2,PHQQ7>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_64"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ4>=2,PHQQ6>=2,PHQQ8>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_65"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ4>=2,PHQQ7>=2,PHQQ8>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_66"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ5>=2,PHQQ6>=2,PHQQ7>=2,PHQQ8>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_67"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ5>=2,PHQQ6>=2,PHQQ7>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_68"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ5>=2,PHQQ6>=2,PHQQ8>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_69"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ5>=2,PHQQ7>=2,PHQQ8>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_70"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ6>=2,PHQQ7>=2,PHQQ8>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_71"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ5>=2,PHQQ6>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_72"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ5>=2,PHQQ7>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_73"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ5>=2,PHQQ8>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_74"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ5>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_75"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ6>=2,PHQQ7>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_76"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ6>=2,PHQQ8>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_77"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ6>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_78"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ7>=2,PHQQ8>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_79"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ7>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_80"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ8>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_81"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ5>=2,PHQQ6>=2,PHQQ7>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_82"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ5>=2,PHQQ6>=2,PHQQ8>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_83"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ5>=2,PHQQ6>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_84"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ5>=2,PHQQ7>=2,PHQQ8>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_85"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ5>=2,PHQQ7>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_86"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ5>=2,PHQQ8>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_87"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ6>=2,PHQQ7>=2,PHQQ8>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_88"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ6>=2,PHQQ7>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_89"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ6>=2,PHQQ8>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_90"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ7>=2,PHQQ8>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_91"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ4>=2,PHQQ5>=2,PHQQ6>=2,PHQQ7>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_92"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ4>=2,PHQQ5>=2,PHQQ6>=2,PHQQ8>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_93"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ4>=2,PHQQ5>=2,PHQQ6>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_94"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ4>=2,PHQQ5>=2,PHQQ7>=2,PHQQ8>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_95"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ4>=2,PHQQ5>=2,PHQQ7>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_96"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ4>=2,PHQQ5>=2,PHQQ8>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_97"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ4>=2,PHQQ6>=2,PHQQ7>=2,PHQQ8>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_98"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ4>=2,PHQQ6>=2,PHQQ7>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_99"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ4>=2,PHQQ6>=2,PHQQ8>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_100"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ4>=2,PHQQ7>=2,PHQQ8>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_101"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ5>=2,PHQQ6>=2,PHQQ7>=2,PHQQ8>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_102"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ5>=2,PHQQ6>=2,PHQQ7>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_103"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ5>=2,PHQQ6>=2,PHQQ8>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_104"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ5>=2,PHQQ7>=2,PHQQ8>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_105"
+	when
+		PHQ2Qa: PHQ2Q(PHQQ1>=2)
+		PHQQa: PHQ9Q(PHQQ6>=2,PHQQ7>=2,PHQQ8>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_106"
+	when
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ5>=2,PHQQ6>=2,PHQQ7>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_107"
+	when
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ5>=2,PHQQ6>=2,PHQQ8>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_108"
+	when
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ5>=2,PHQQ6>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_109"
+	when
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ5>=2,PHQQ7>=2,PHQQ8>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_110"
+	when
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ5>=2,PHQQ7>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_111"
+	when
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ5>=2,PHQQ8>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_112"
+	when
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ6>=2,PHQQ7>=2,PHQQ8>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_113"
+	when
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ6>=2,PHQQ7>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_114"
+	when
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ6>=2,PHQQ8>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_115"
+	when
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ7>=2,PHQQ8>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_116"
+	when
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ5>=2,PHQQ6>=2,PHQQ7>=2,PHQQ8>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_117"
+	when
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ5>=2,PHQQ6>=2,PHQQ7>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_118"
+	when
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ5>=2,PHQQ6>=2,PHQQ8>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_119"
+	when
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ5>=2,PHQQ7>=2,PHQQ8>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_120"
+	when
+		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ6>=2,PHQQ7>=2,PHQQ8>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_121"
+	when
+		PHQQa: PHQ9Q(PHQQ4>=2,PHQQ5>=2,PHQQ6>=2,PHQQ7>=2,PHQQ8>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_122"
+	when
+		PHQQa: PHQ9Q(PHQQ4>=2,PHQQ5>=2,PHQQ6>=2,PHQQ7>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_123"
+	when
+		PHQQa: PHQ9Q(PHQQ4>=2,PHQQ5>=2,PHQQ6>=2,PHQQ8>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_124"
+	when
+		PHQQa: PHQ9Q(PHQQ4>=2,PHQQ5>=2,PHQQ7>=2,PHQQ8>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_125"
+	when
+		PHQQa: PHQ9Q(PHQQ4>=2,PHQQ6>=2,PHQQ7>=2,PHQQ8>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
+
+rule "PHQ-9-Rule_126"
+	when
+		PHQQa: PHQ9Q(PHQQ5>=2,PHQQ6>=2,PHQQ7>=2,PHQQ8>=2,PHQQ9>=2)
+	then
+		PHQ9R fact1 = new PHQ9R();
+		fact1.setPHQ9Result(true);
+		insert(fact1);
+end
