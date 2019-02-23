@@ -1385,7 +1385,7 @@ rule "PHQ-9-Rule_117"
 	dialect "mvel"
 	ruleflow-group "PHQ-9-Rule"
 	when
-		PHQ9Qa: PHQ9Q(PHQQ3>=2,PHQQ5>=2,PHQQ6>=2,PHQQ7>=2,PHQQ9>=2)
+		PHQ9Qa: PHQ9Q(PHQQ3>=2,PHQQ5>=2,PHQQ6>=2,PHQQ7>=2,PHQQ9>=1)
 	then
 		PHQ9R fact1 = new PHQ9R();
 		fact1.setPHQ9Result(true);
@@ -1396,7 +1396,7 @@ rule "PHQ-9-Rule_118"
 	dialect "mvel"
 	ruleflow-group "PHQ-9-Rule"
 	when
-		PHQ9Qa: PHQ9Q(PHQQ3>=2,PHQQ5>=2,PHQQ6>=2,PHQQ8>=2,PHQQ9>=2)
+		PHQ9Qa: PHQ9Q(PHQQ3>=2,PHQQ5>=2,PHQQ6>=2,PHQQ8>=2,PHQQ9>=1)
 	then
 		PHQ9R fact1 = new PHQ9R();
 		fact1.setPHQ9Result(true);
@@ -1407,7 +1407,7 @@ rule "PHQ-9-Rule_119"
 	dialect "mvel"
 	ruleflow-group "PHQ-9-Rule"
 	when
-		PHQ9Qa: PHQ9Q(PHQQ3>=2,PHQQ5>=2,PHQQ7>=2,PHQQ8>=2,PHQQ9>=2)
+		PHQ9Qa: PHQ9Q(PHQQ3>=2,PHQQ5>=2,PHQQ7>=2,PHQQ8>=2,PHQQ9>=1)
 	then
 		PHQ9R fact1 = new PHQ9R();
 		fact1.setPHQ9Result(true);
@@ -1418,7 +1418,7 @@ rule "PHQ-9-Rule_120"
 	dialect "mvel"
 	ruleflow-group "PHQ-9-Rule"
 	when
-		PHQ9Qa: PHQ9Q(PHQQ3>=2,PHQQ6>=2,PHQQ7>=2,PHQQ8>=2,PHQQ9>=2)
+		PHQ9Qa: PHQ9Q(PHQQ3>=2,PHQQ6>=2,PHQQ7>=2,PHQQ8>=2,PHQQ9>=1)
 	then
 		PHQ9R fact1 = new PHQ9R();
 		fact1.setPHQ9Result(true);
