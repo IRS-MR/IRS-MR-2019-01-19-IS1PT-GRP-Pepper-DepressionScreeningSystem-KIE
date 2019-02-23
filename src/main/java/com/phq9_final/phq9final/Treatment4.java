@@ -6,12 +6,23 @@ package com.phq9_final.phq9final;
 
 public class Treatment4 implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Treatment4() {
-    }
+	private java.lang.Boolean treat4;
 
+	public Treatment4() {
+	}
 
+	public java.lang.Boolean getTreat4() {
+		return this.treat4;
+	}
 
+	public void setTreat4(java.lang.Boolean treat4) {
+		this.treat4 = treat4;
+	}
+
+	public Treatment4(java.lang.Boolean treat4) {
+		this.treat4 = treat4;
+	}
 
 }
