@@ -6,12 +6,33 @@ package com.phq9_final.phq9final;
 
 public class PHQ2Q implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public PHQ2Q() {
-    }
+	private java.lang.Double PHQQ1;
+	private java.lang.Double PHQQ2;
 
+	public PHQ2Q() {
+	}
 
+	public java.lang.Double getPHQQ1() {
+		return this.PHQQ1;
+	}
 
+	public void setPHQQ1(java.lang.Double PHQQ1) {
+		this.PHQQ1 = PHQQ1;
+	}
+
+	public java.lang.Double getPHQQ2() {
+		return this.PHQQ2;
+	}
+
+	public void setPHQQ2(java.lang.Double PHQQ2) {
+		this.PHQQ2 = PHQQ2;
+	}
+
+	public PHQ2Q(java.lang.Double PHQQ1, java.lang.Double PHQQ2) {
+		this.PHQQ1 = PHQQ1;
+		this.PHQQ2 = PHQQ2;
+	}
 
 }
