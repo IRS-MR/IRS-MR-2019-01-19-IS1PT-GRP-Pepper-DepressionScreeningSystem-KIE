@@ -6,12 +6,81 @@ package com.phq9_final.phq9final;
 
 public class PatientParticular implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public PatientParticular() {
-    }
+	@org.kie.api.definition.type.Label(value = "Name")
+	private java.lang.String name;
+	@org.kie.api.definition.type.Label(value = "Age")
+	private java.lang.String age;
+	@org.kie.api.definition.type.Label(value = "Gender")
+	private java.lang.String gender;
+	@org.kie.api.definition.type.Label(value = "Race")
+	private java.lang.String race;
+	@org.kie.api.definition.type.Label(value = "Marital Status")
+	private java.lang.String marital_status;
+	@org.kie.api.definition.type.Label(value = "Chronic Condition")
+	private java.lang.String chronic;
 
+	public PatientParticular() {
+	}
 
+	public java.lang.String getName() {
+		return this.name;
+	}
 
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public java.lang.String getAge() {
+		return this.age;
+	}
+
+	public void setAge(java.lang.String age) {
+		this.age = age;
+	}
+
+	public java.lang.String getGender() {
+		return this.gender;
+	}
+
+	public void setGender(java.lang.String gender) {
+		this.gender = gender;
+	}
+
+	public java.lang.String getRace() {
+		return this.race;
+	}
+
+	public void setRace(java.lang.String race) {
+		this.race = race;
+	}
+
+	public java.lang.String getMarital_status() {
+		return this.marital_status;
+	}
+
+	public void setMarital_status(java.lang.String marital_status) {
+		this.marital_status = marital_status;
+	}
+
+	public java.lang.String getChronic() {
+		return this.chronic;
+	}
+
+	public void setChronic(java.lang.String chronic) {
+		this.chronic = chronic;
+	}
+
+	public PatientParticular(java.lang.String name, java.lang.String age,
+			java.lang.String gender, java.lang.String race,
+			java.lang.String marital_status, java.lang.String chronic) {
+		this.name = name;
+		this.age = age;
+		this.gender = gender;
+		this.race = race;
+		this.marital_status = marital_status;
+		this.chronic = chronic;
+	}
 
 }
