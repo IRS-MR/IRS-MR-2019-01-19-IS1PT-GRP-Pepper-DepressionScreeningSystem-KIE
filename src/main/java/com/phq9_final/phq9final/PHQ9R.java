@@ -6,12 +6,23 @@ package com.phq9_final.phq9final;
 
 public class PHQ9R implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public PHQ9R() {
-    }
+	private java.lang.Boolean PHQ9Result;
 
+	public PHQ9R() {
+	}
 
+	public java.lang.Boolean getPHQ9Result() {
+		return this.PHQ9Result;
+	}
 
+	public void setPHQ9Result(java.lang.Boolean PHQ9Result) {
+		this.PHQ9Result = PHQ9Result;
+	}
+
+	public PHQ9R(java.lang.Boolean PHQ9Result) {
+		this.PHQ9Result = PHQ9Result;
+	}
 
 }
