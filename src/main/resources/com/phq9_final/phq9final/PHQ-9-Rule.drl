@@ -1,4 +1,3 @@
-
 package com.phq9_final.phq9final;
 
 rule "PHQ-9-Rule_1"
