@@ -6,12 +6,86 @@ package com.phq9_final.phq9final;
 
 public class PHQ9Q implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public PHQ9Q() {
-    }
+	private java.lang.Double PHQQ3;
+	private java.lang.Double PHQQ4;
+	private java.lang.Double PHQQ5;
+	private java.lang.Double PHQQ6;
+	private java.lang.Double PHQQ7;
+	private java.lang.Double PHQQ8;
+	private java.lang.Double PHQQ9;
 
+	public PHQ9Q() {
+	}
 
+	public java.lang.Double getPHQQ3() {
+		return this.PHQQ3;
+	}
 
+	public void setPHQQ3(java.lang.Double PHQQ3) {
+		this.PHQQ3 = PHQQ3;
+	}
+
+	public java.lang.Double getPHQQ4() {
+		return this.PHQQ4;
+	}
+
+	public void setPHQQ4(java.lang.Double PHQQ4) {
+		this.PHQQ4 = PHQQ4;
+	}
+
+	public java.lang.Double getPHQQ5() {
+		return this.PHQQ5;
+	}
+
+	public void setPHQQ5(java.lang.Double PHQQ5) {
+		this.PHQQ5 = PHQQ5;
+	}
+
+	public java.lang.Double getPHQQ6() {
+		return this.PHQQ6;
+	}
+
+	public void setPHQQ6(java.lang.Double PHQQ6) {
+		this.PHQQ6 = PHQQ6;
+	}
+
+	public java.lang.Double getPHQQ7() {
+		return this.PHQQ7;
+	}
+
+	public void setPHQQ7(java.lang.Double PHQQ7) {
+		this.PHQQ7 = PHQQ7;
+	}
+
+	public java.lang.Double getPHQQ8() {
+		return this.PHQQ8;
+	}
+
+	public void setPHQQ8(java.lang.Double PHQQ8) {
+		this.PHQQ8 = PHQQ8;
+	}
+
+	public java.lang.Double getPHQQ9() {
+		return this.PHQQ9;
+	}
+
+	public void setPHQQ9(java.lang.Double PHQQ9) {
+		this.PHQQ9 = PHQQ9;
+	}
+
+	public PHQ9Q(java.lang.Double PHQQ3, java.lang.Double PHQQ4,
+			java.lang.Double PHQQ5, java.lang.Double PHQQ6,
+			java.lang.Double PHQQ7, java.lang.Double PHQQ8,
+			java.lang.Double PHQQ9) {
+		this.PHQQ3 = PHQQ3;
+		this.PHQQ4 = PHQQ4;
+		this.PHQQ5 = PHQQ5;
+		this.PHQQ6 = PHQQ6;
+		this.PHQQ7 = PHQQ7;
+		this.PHQQ8 = PHQQ8;
+		this.PHQQ9 = PHQQ9;
+	}
 
 }
