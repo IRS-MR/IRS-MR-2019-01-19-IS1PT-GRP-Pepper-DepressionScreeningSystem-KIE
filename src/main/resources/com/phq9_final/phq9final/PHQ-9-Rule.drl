@@ -5,7 +5,7 @@ rule "PHQ-9-Rule_1"
 	ruleflow-group "PHQ-9-Rule"
 	when
 		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
-		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ5>=2)
+		PHQ9Qa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ5>=2)
 	then
 		PHQ9R fact1 = new PHQ9R();
 		fact1.setPHQ9Result(true);
@@ -17,7 +17,7 @@ rule "PHQ-9-Rule_2"
 	ruleflow-group "PHQ-9-Rule"
 	when
 		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
-		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ6>=2)
+		PHQQ9a: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ6>=2)
 	then
 		PHQ9R fact1 = new PHQ9R();
 		fact1.setPHQ9Result(true);
@@ -29,7 +29,7 @@ rule "PHQ-9-Rule_3"
 	ruleflow-group "PHQ-9-Rule"
 	when
 		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
-		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ7>=2)
+		PHQ9Qa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ7>=2)
 	then
 		PHQ9R fact1 = new PHQ9R();
 		fact1.setPHQ9Result(true);
@@ -41,7 +41,7 @@ rule "PHQ-9-Rule_4"
 	ruleflow-group "PHQ-9-Rule"
 	when
 		PHQ2Qa: PHQ2Q(PHQQ1>=2,PHQQ2>=2)
-		PHQQa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ8>=2)
+		PHQ9Qa: PHQ9Q(PHQQ3>=2,PHQQ4>=2,PHQQ8>=2)
 	then
 		PHQ9R fact1 = new PHQ9R();
 		fact1.setPHQ9Result(true);
