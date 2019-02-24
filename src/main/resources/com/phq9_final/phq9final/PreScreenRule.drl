@@ -3,7 +3,7 @@ package com.phq9_final.phq9final;
 import java.lang.Number;
 
 
-rule "PreScreenTree_00"
+rule "PreScreenRule_0"
 	dialect "mvel"
 	ruleflow-group "PreScreenRule"
 	when 
@@ -13,7 +13,7 @@ rule "PreScreenTree_00"
 		$var0.setPreScreenResult( true );
 		insert( $var0 );
 end
-rule "PreScreenTree_01"
+rule "PreScreenRule_1"
 	dialect "mvel"
 	ruleflow-group "PreScreenRule"
 	when 
@@ -23,7 +23,7 @@ rule "PreScreenTree_01"
 		$var0.setPreScreenResult( true );
 		insert( $var0 );
 end
-rule "PreScreenTree_02"
+rule "PreScreenRule_2"
 	dialect "mvel"
 	ruleflow-group "PreScreenRule"
 	when 
@@ -33,7 +33,7 @@ rule "PreScreenTree_02"
 		$var0.setPreScreenResult( true );
 		insert( $var0 );
 end
-rule "PreScreenTree_03"
+rule "PreScreenRule_3"
 	dialect "mvel"
 	ruleflow-group "PreScreenRule"
 	when 
@@ -43,7 +43,7 @@ rule "PreScreenTree_03"
 		$var0.setPreScreenResult( true );
 		insert( $var0 );
 end
-rule "PreScreenTree_04"
+rule "PreScreenRule_4"
 	dialect "mvel"
 	ruleflow-group "PreScreenRule"
 	when 
