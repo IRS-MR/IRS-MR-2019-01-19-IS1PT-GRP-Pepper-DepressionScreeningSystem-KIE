@@ -10,7 +10,7 @@ rule "PreScreenTree_0"
 end
 rule "PreScreenTree_1"
 	when 
-		PatientP : PatientParticular(marital_status not matches "Separated", race not matches "Others", age not matches "18-34", gender not matches "Male", chronic matches "Yes")
+		PatientP : PatientParticular(marital_status matches "Widowed")
 	then 
 		PreScreenR $var0 = new PreScreenR();
 		$var0.setPreScreenResult( true );
@@ -18,7 +18,7 @@ rule "PreScreenTree_1"
 end
 rule "PreScreenTree_2"
 	when 
-		PatientP : PatientParticular(marital_status not matches "Separated", race not matches "Others", age matches "18-34")
+		PatientP : PatientParticular(marital_status not matches "Widowed", marital_status not matches "Separated", race not matches "Others", age not matches "18-34", gender matches "Female", chronic matches "Yes")
 	then 
 		PreScreenR $var0 = new PreScreenR();
 		$var0.setPreScreenResult( true );
@@ -26,7 +26,15 @@ rule "PreScreenTree_2"
 end
 rule "PreScreenTree_3"
 	when 
-		PatientP : PatientParticular(marital_status not matches "Separated", race matches "Others")
+		PatientP : PatientParticular(marital_status not matches "Widowed", marital_status not matches "Separated", race not matches "Others", age matches "18-34")
+	then 
+		PreScreenR $var0 = new PreScreenR();
+		$var0.setPreScreenResult( true );
+		insert( $var0 );
+end
+rule "PreScreenTree_4"
+	when 
+		PatientP : PatientParticular(marital_status not matches "Widowed", marital_status not matches "Separated", race matches "Others")
 	then 
 		PreScreenR $var0 = new PreScreenR();
 		$var0.setPreScreenResult( true );
