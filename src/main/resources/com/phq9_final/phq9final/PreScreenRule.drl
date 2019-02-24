@@ -5,7 +5,7 @@ import java.lang.Number;
 
 rule "PreScreenRule_0"
 	dialect "mvel"
-	ruleflow-group "PreScreenRule"
+	ruleflow-group "PreScreenRuleG"
 	when 
 		PatientP : PatientParticular(marital_status matches "Separated")
 	then 
@@ -15,7 +15,7 @@ rule "PreScreenRule_0"
 end
 rule "PreScreenRule_1"
 	dialect "mvel"
-	ruleflow-group "PreScreenRule"
+	ruleflow-group "PreScreenRuleG"
 	when 
 		PatientP : PatientParticular(marital_status matches "Widowed")
 	then 
@@ -25,7 +25,7 @@ rule "PreScreenRule_1"
 end
 rule "PreScreenRule_2"
 	dialect "mvel"
-	ruleflow-group "PreScreenRule"
+	ruleflow-group "PreScreenRuleG"
 	when 
 		PatientP : PatientParticular(marital_status not matches "Widowed", marital_status not matches "Separated", race not matches "Others", age not matches "18-34", gender matches "Female", chronic matches "Yes")
 	then 
@@ -35,7 +35,7 @@ rule "PreScreenRule_2"
 end
 rule "PreScreenRule_3"
 	dialect "mvel"
-	ruleflow-group "PreScreenRule"
+	ruleflow-group "PreScreenRuleG"
 	when 
 		PatientP : PatientParticular(marital_status not matches "Widowed", marital_status not matches "Separated", race not matches "Others", age matches "18-34")
 	then 
@@ -45,7 +45,7 @@ rule "PreScreenRule_3"
 end
 rule "PreScreenRule_4"
 	dialect "mvel"
-	ruleflow-group "PreScreenRule"
+	ruleflow-group "PreScreenRuleG"
 	when 
 		PatientP : PatientParticular(marital_status not matches "Widowed", marital_status not matches "Separated", race matches "Others")
 	then 
