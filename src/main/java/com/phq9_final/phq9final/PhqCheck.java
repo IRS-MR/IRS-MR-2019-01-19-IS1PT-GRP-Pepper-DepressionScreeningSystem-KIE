@@ -15,8 +15,8 @@ public class PhqCheck implements java.io.Serializable {
 	public PhqCheck() {
 	}
 
-	public java.lang.Integer getPHQ2QaInBlue() {
-		private java.lang.Integer inBlue = 0;
+	public int getPHQ2QaInBlue() {
+		int inBlue = 0;
 		if (PHQ2Qa.getPHQQ1() >= 2) {
 			inBlue++;
 		}
@@ -27,8 +27,8 @@ public class PhqCheck implements java.io.Serializable {
 		return inBlue;
 	}
 
-	public java.lang.Integer getPHQ9QaInBlue() {
-		private java.lang.Integer inBlue = 0;
+	public int getPHQ9QaInBlue() {
+		int inBlue = 0;
 		if (PHQ9Qa.getPHQQ3() >= 2) {
 			inBlue++;
 		}
@@ -54,9 +54,9 @@ public class PhqCheck implements java.io.Serializable {
 		return inBlue;
 	}
 
-	public java.lang.Integer getTotalInBlue() {
+	public int getTotalInBlue() {
 
-        java.lang.Integer inBlue=0;
+        int inBlue=0;
 		inBlue = getPHQ2QaInBlue() + getPHQ9QaInBlue();
 		return inBlue;
 	}
