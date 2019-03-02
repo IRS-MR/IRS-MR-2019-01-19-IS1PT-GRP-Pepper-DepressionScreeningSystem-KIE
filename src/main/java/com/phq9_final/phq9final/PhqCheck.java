@@ -12,12 +12,10 @@ public class PhqCheck implements java.io.Serializable {
 
 	private com.phq9_final.phq9final.PHQ9Q PHQ9Qa;
 
-	private java.lang.Integer inBlue;
-
 	public PhqCheck() {
 	}
 
-	public int getPHQ2QaInBlue() {
+	public java.lang.Integer getPHQ2QaInBlue() {
 		private java.lang.Integer inBlue2 = 0;
 		if (PHQ2Qa.getPHQQ1() >= 2) {
 			inBlue2++;
@@ -26,10 +24,10 @@ public class PhqCheck implements java.io.Serializable {
 			inBlue2++;
 		}
 
-		return 0;
+		return inBlue2;
 	}
 
-	public int getPHQ9QaInBlue() {
+	public java.lang.Integer getPHQ9QaInBlue() {
 		private java.lang.Integer inBlue9 = 0;
 		if (PHQ9Qa.getPHQQ3() >= 2) {
 			inBlue9++;
@@ -53,13 +51,13 @@ public class PhqCheck implements java.io.Serializable {
 			inBlue9++;
 		}
 
-		return 0;
+		return inBlue9;
 	}
 
-	public int getTotalInBlue() {
+	public java.lang.Integer getTotalInBlue() {
 
-        this.inBlue=getPHQ2QaInBlue() + getPHQ9QaInBlue();
-		return 0;
+		inBlue = getPHQ2QaInBlue() + getPHQ9QaInBlue();
+		return inBlue;
 	}
 
 	public com.phq9_final.phq9final.PHQ2Q getPHQ2Qa() {
@@ -78,19 +76,12 @@ public class PhqCheck implements java.io.Serializable {
 		this.PHQ9Qa = PHQ9Qa;
 	}
 
-	public java.lang.Integer getInBlue() {
-		return this.inBlue;
-	}
 
-	public void setInBlue(java.lang.Integer inBlue) {
-		this.inBlue = inBlue;
-	}
 
 	public PhqCheck(com.phq9_final.phq9final.PHQ2Q PHQ2Qa,
-			com.phq9_final.phq9final.PHQ9Q PHQ9Qa, java.lang.Integer inBlue) {
+			com.phq9_final.phq9final.PHQ9Q PHQ9Qa) {
 		this.PHQ2Qa = PHQ2Qa;
 		this.PHQ9Qa = PHQ9Qa;
-		//this.inBlue = inBlue;
 	}
 
 }
