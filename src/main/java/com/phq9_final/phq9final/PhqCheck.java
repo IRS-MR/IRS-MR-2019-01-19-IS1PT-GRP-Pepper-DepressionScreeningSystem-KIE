@@ -8,70 +8,49 @@ public class PhqCheck implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private com.phq9_final.phq9final.PHQ2Q p2;
-	private com.phq9_final.phq9final.PHQ9Q p9;
+	private com.phq9_final.phq9final.PHQ2Q PHQ2Qa;
+
+	private com.phq9_final.phq9final.PHQ9Q PHQ9Qa;
 
 	public PhqCheck() {
 	}
 
-	public com.phq9_final.phq9final.PHQ2Q getP2() {
-		return this.p2;
-	}
-
-	public void setP2(com.phq9_final.phq9final.PHQ2Q p2) {
-		this.p2 = p2;
-	}
-
-	public com.phq9_final.phq9final.PHQ9Q getP9() {
-		return this.p9;
-	}
-
-	public void setP9(com.phq9_final.phq9final.PHQ9Q p9) {
-		this.p9 = p9;
-	}
-
-	public PhqCheck(com.phq9_final.phq9final.PHQ2Q p2,
-			com.phq9_final.phq9final.PHQ9Q p9) {
-		this.p2 = p2;
-		this.p9 = p9;
-	}
-
-public int getP2InBlue() {
+	public int getPHQ2QaInBlue() {
 		int inBlue = 0;
-		if (p2.getPHQQ1() >= 2) {
+		if (PHQ2Qa.getPHQQ1() >= 2) {
 			inBlue++;
 		}
-		if (p2.getPHQQ2() >= 2) {
+		if (PHQ2Qa.getPHQQ2() >= 2) {
 			inBlue++;
 		}
-		
+
 		return inBlue;
 	}
 
-	public int getP9InBlue() {
+	public int getPHQ9QaInBlue() {
 		int inBlue = 0;
-		if (p9.getPHQQ3() >= 2) {
+		if (PHQ9Qa.getPHQQ3() >= 2) {
 			inBlue++;
 		}
-		if (p9.getPHQQ4() >= 2) {
+		if (PHQ9Qa.getPHQQ4() >= 2) {
 			inBlue++;
 		}
-		if (p9.getPHQQ5() >= 2) {
+		if (PHQ9Qa.getPHQQ5() >= 2) {
 			inBlue++;
 		}
-		if (p9.getPHQQ6() >= 2) {
+		if (PHQ9Qa.getPHQQ6() >= 2) {
 			inBlue++;
 		}
-		if (p9.getPHQQ7() >= 2) {
+		if (PHQ9Qa.getPHQQ7() >= 2) {
 			inBlue++;
 		}
-		if (p9.getPHQQ8() >= 2) {
+		if (PHQ9Qa.getPHQQ8() >= 2) {
 			inBlue++;
 		}
-		if (p9.getPHQQ9() >= 2) {
+		if (PHQ9Qa.getPHQQ9() >= 1) {
 			inBlue++;
 		}
-		
+
 		return inBlue;
 	}
 
@@ -79,6 +58,26 @@ public int getP2InBlue() {
 		return getP2InBlue() + getP9InBlue();
 	}
 
+	public com.phq9_final.phq9final.PHQ2Q getPHQ2Qa() {
+		return this.PHQ2Qa;
+	}
 
+	public void setPHQ2Qa(com.phq9_final.phq9final.PHQ2Q PHQ2Qa) {
+		this.PHQ2Qa = PHQ2Qa;
+	}
+
+	public com.phq9_final.phq9final.PHQ9Q getPHQ9Qa() {
+		return this.PHQ9Qa;
+	}
+
+	public void setPHQ9Qa(com.phq9_final.phq9final.PHQ9Q PHQ9Qa) {
+		this.PHQ9Qa = PHQ9Qa;
+	}
+
+	public PhqCheck(com.phq9_final.phq9final.PHQ2Q PHQ2Qa,
+			com.phq9_final.phq9final.PHQ9Q PHQ9Qa) {
+		this.PHQ2Qa = PHQ2Qa;
+		this.PHQ9Qa = PHQ9Qa;
+	}
 
 }
