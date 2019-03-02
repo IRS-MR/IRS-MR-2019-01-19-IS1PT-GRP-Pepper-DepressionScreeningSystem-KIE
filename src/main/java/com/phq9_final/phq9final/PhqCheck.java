@@ -6,12 +6,34 @@ package com.phq9_final.phq9final;
 
 public class PhqCheck implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public PhqCheck() {
-    }
+	private com.phq9_final.phq9final.PHQ2Q p2;
+	private com.phq9_final.phq9final.PHQ9Q p9;
 
+	public PhqCheck() {
+	}
 
+	public com.phq9_final.phq9final.PHQ2Q getP2() {
+		return this.p2;
+	}
 
+	public void setP2(com.phq9_final.phq9final.PHQ2Q p2) {
+		this.p2 = p2;
+	}
+
+	public com.phq9_final.phq9final.PHQ9Q getP9() {
+		return this.p9;
+	}
+
+	public void setP9(com.phq9_final.phq9final.PHQ9Q p9) {
+		this.p9 = p9;
+	}
+
+	public PhqCheck(com.phq9_final.phq9final.PHQ2Q p2,
+			com.phq9_final.phq9final.PHQ9Q p9) {
+		this.p2 = p2;
+		this.p9 = p9;
+	}
 
 }
