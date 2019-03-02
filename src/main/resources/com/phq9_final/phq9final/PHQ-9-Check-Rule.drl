@@ -1,2 +1,15 @@
 package com.phq9_final.phq9final;
 
+
+rule "PHQ9-Check-Rule_1"
+	dialect "mvel"
+	//ruleflow-group "PHQ-9-Check-Rule"
+	when
+		PhqCheckA: PhqCheck(TotalInBlue >= 5)
+		not PHQ9R()
+	then
+		PHQ9R fact8 = new PHQ9R();
+		fact8.setPHQ9Result(true);
+		insert(fact8);
+end
+
