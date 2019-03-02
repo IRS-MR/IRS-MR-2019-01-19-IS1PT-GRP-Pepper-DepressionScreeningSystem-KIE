@@ -16,42 +16,42 @@ public class PhqCheck implements java.io.Serializable {
 	}
 
 	public java.lang.Integer getPHQ2QaInBlue() {
-		private java.lang.Integer inBlue2 = 0;
+		private java.lang.Integer inBlue = 0;
 		if (PHQ2Qa.getPHQQ1() >= 2) {
-			inBlue2++;
+			inBlue++;
 		}
 		if (PHQ2Qa.getPHQQ2() >= 2) {
-			inBlue2++;
+			inBlue++;
 		}
 
-		return inBlue2;
+		return inBlue;
 	}
 
 	public java.lang.Integer getPHQ9QaInBlue() {
-		private java.lang.Integer inBlue9 = 0;
+		private java.lang.Integer inBlue = 0;
 		if (PHQ9Qa.getPHQQ3() >= 2) {
-			inBlue9++;
+			inBlue++;
 		}
 		if (PHQ9Qa.getPHQQ4() >= 2) {
-			inBlue9++;
+			inBlue++;
 		}
 		if (PHQ9Qa.getPHQQ5() >= 2) {
-			inBlue9++;
+			inBlue++;
 		}
 		if (PHQ9Qa.getPHQQ6() >= 2) {
-			inBlue9++;
+			inBlue++;
 		}
 		if (PHQ9Qa.getPHQQ7() >= 2) {
-			inBlue9++;
+			inBlue++;
 		}
 		if (PHQ9Qa.getPHQQ8() >= 2) {
-			inBlue9++;
+			inBlue++;
 		}
 		if (PHQ9Qa.getPHQQ9() >= 1) {
-			inBlue9++;
+			inBlue++;
 		}
 
-		return inBlue9;
+		return inBlue;
 	}
 
 	public java.lang.Integer getTotalInBlue() {
