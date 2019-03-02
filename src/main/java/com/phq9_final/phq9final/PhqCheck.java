@@ -55,7 +55,7 @@ public class PhqCheck implements java.io.Serializable {
 	}
 
 	public int getTotalInBlue() {
-		return getP2InBlue() + getP9InBlue();
+		return getPHQ2QaInBlue() + getPHQ9QaInBlue();
 	}
 
 	public com.phq9_final.phq9final.PHQ2Q getPHQ2Qa() {
