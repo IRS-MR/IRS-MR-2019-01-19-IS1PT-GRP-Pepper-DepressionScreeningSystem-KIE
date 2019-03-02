@@ -36,4 +36,49 @@ public class PhqCheck implements java.io.Serializable {
 		this.p9 = p9;
 	}
 
+public int getP2InBlue() {
+		int inBlue = 0;
+		if (p2.getPHQQ1() >= 2) {
+			inBlue++;
+		}
+		if (p2.getPHQQ2() >= 2) {
+			inBlue++;
+		}
+		
+		return inBlue;
+	}
+
+	public int getP9InBlue() {
+		int inBlue = 0;
+		if (p9.getPHQQ3() >= 2) {
+			inBlue++;
+		}
+		if (p9.getPHQQ4() >= 2) {
+			inBlue++;
+		}
+		if (p9.getPHQQ5() >= 2) {
+			inBlue++;
+		}
+		if (p9.getPHQQ6() >= 2) {
+			inBlue++;
+		}
+		if (p9.getPHQQ7() >= 2) {
+			inBlue++;
+		}
+		if (p9.getPHQQ8() >= 2) {
+			inBlue++;
+		}
+		if (p9.getPHQQ9() >= 2) {
+			inBlue++;
+		}
+		
+		return inBlue;
+	}
+
+	public int getTotalInBlue() {
+		return getP2InBlue() + getP9InBlue();
+	}
+
+
+
 }
