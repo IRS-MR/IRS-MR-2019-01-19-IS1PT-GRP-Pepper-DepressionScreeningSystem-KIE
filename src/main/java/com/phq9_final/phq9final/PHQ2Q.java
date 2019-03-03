@@ -30,9 +30,23 @@ public class PHQ2Q implements java.io.Serializable {
 		this.PHQQ2 = PHQQ2;
 	}
 
+
+
 	public PHQ2Q(java.lang.Double PHQQ1, java.lang.Double PHQQ2) {
 		this.PHQQ1 = PHQQ1;
 		this.PHQQ2 = PHQQ2;
+	}
+	
+	public int getTotalInBlue() {
+		int inBlue = 0;
+		if (PHQ2Qa.getPHQQ1() >= 2) {
+			inBlue++;
+		}
+		if (PHQ2Qa.getPHQQ2() >= 2) {
+			inBlue++;
+		}
+
+		return inBlue;
 	}
 
 }
