@@ -75,6 +75,34 @@ public class PHQ9Q implements java.io.Serializable {
 		this.PHQQ9 = PHQQ9;
 	}
 
+	public int getTotalInBlue() {
+		int inBlue = 0;
+		if (this.PHQQ3 >= 2) {
+			inBlue++;
+		}
+		if (this.PHQQ4>= 2) {
+			inBlue++;
+		}
+		if (this.PHQQ5>= 2) {
+			inBlue++;
+		}
+		if (this.PHQQ6 >= 2) {
+			inBlue++;
+		}
+		if (this.PHQQ7>= 2) {
+			inBlue++;
+		}
+		if (this.PHQQ8>= 2) {
+			inBlue++;
+		}
+		if (this.PHQQ9>= 1) {
+			inBlue++;
+		}
+
+		return inBlue;
+	}
+
+
 	public PHQ9Q(java.lang.Double PHQQ3, java.lang.Double PHQQ4,
 			java.lang.Double PHQQ5, java.lang.Double PHQQ6,
 			java.lang.Double PHQQ7, java.lang.Double PHQQ8,
