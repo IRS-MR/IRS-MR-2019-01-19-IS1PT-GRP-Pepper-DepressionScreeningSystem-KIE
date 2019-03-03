@@ -5,8 +5,8 @@ rule "PHQ9-Check-Rule_1"
 	dialect "mvel"
 	ruleflow-group "PHQ-9-Check-Rule"
 	when
-		PhqCheckA: PhqCheck(TotalInBlue >= 5)
-		not PHQ9R()
+		PHQ2Qa : PHQ2Q(TotalInBlue)
+		PHQ9Qa : PHQ9Q(PHQ2Qa.TotalInBlue + PHQ9Qa.TotalInBlue)
 	then
 		PHQ9R fact8 = new PHQ9R();
 		fact8.setPHQ9Result(true);
